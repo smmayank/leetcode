@@ -27,7 +27,7 @@ public class ReverseWordsInAStringIII {
     }
 
     public String reverseWords(String input) {
-        return Arrays.stream(input.split("\s+"))
+        return Arrays.stream(input.split("\\s+"))
             .map(this::reverseWord)
             .collect(Collectors.joining(" "));
     }
