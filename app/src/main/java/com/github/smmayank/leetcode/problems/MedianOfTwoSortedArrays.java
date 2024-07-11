@@ -22,7 +22,7 @@ public class MedianOfTwoSortedArrays {
         while (firstIndex < nums1.length && secondIndex < nums2.length && mergedIndex <= (half)) {
             int firstNumber = nums1[firstIndex];
             int secondNumber = nums2[secondIndex];
-            int number = 0;
+            int number;
             if (firstNumber < secondNumber) {
                 firstIndex++;
                 number = firstNumber;
